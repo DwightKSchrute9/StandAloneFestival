@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <img src="assets/favicon-32x32.png" alt="Logo" width="38" height="38" class="logo">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown" (mouseenter)="isDropdownOpen = true" (mouseleave)="isDropdownOpen = false">
+          <a class="nav-link" href="#">
+            Stand Alone Complex
+          </a>
+          <div class="dropdown-menu" [class.show]="isDropdownOpen" (click)="isDropdownOpen = false">
+            <a class="dropdown-item" routerLink="/photos">Stand Alone Festival</a>
+            <a class="dropdown-item" routerLink="/gloam-session">Gloam Session</a>
+            <a class="dropdown-item" routerLink="/audiolibri">Audiolibri</a>
+            <a class="dropdown-item" routerLink="/eventi">Eventi</a>
+          </div>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>

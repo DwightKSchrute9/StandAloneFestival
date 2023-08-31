@@ -1,0 +1,59 @@
+.audio-scene-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 20px; // Riduci il padding
+  background-color: #0f3f20;
+  color: black;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    padding: 15px; // Riduci il padding ulteriormente
+  }
+
+  @media (max-width: 375px) {
+    padding: 10px;
+  }
+}
+
+.audio-main {
+  .main-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem; // Aggiungi un margine inferiore
+    max-height: 50vh; // Rimpicciolisci l'altezza dell'immagine
+  }
+
+  h2 {
+    margin-top: 0.5rem; // Riduci il margine superiore
+    font-size: 1.25rem; // Riduci la dimensione del font
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem; // Riduci la dimensione del font
+  }
+}
+
+.audio-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  iframe {
+    max-width: 100%;
+    height: auto; // Rimpicciolisci l'altezza dell'iframe
+  }
+
+  .spotify-link {
+    a {
+      text-decoration: none;
+      color: #1db954;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 0.8rem; // Riduci la dimensione del font
+    }
+  }
+}

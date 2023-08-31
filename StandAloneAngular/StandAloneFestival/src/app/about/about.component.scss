@@ -1,0 +1,40 @@
+.about-section {
+  background-color: grey; 
+  text-align: center;
+  padding: 20px;
+  color: white;
+
+  .logo {
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: auto; // Altezza regolata in base all'aspetto originale
+  }
+
+
+  .article {
+    background-color: rgba(0, 0, 0, 0.6); /* Colore di sfondo con trasparenza */
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(8px); /* Effetto blur del colore di sfondo */
+    color: rgb(238, 208, 208);
+
+
+    blockquote {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    cite {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+
+  }
+}

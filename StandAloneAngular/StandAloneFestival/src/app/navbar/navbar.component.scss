@@ -1,0 +1,45 @@
+// src/styles.scss
+
+
+
+
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+
+  height: 10vh;
+  border-radius: 8px;
+
+  .logo-container {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+
+  .logo:hover {
+    transform: rotate(360deg); // Aggiunge la rotazione al passaggio del mouse
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 1rem;
+
+    .btn-link {
+      color: white;
+      text-decoration: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #ffc107;
+      }
+    }
+  }
+  .wallpaper{
+    height: 100vh;
+  }
+}
