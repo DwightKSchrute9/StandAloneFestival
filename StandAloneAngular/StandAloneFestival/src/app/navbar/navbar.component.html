@@ -1,7 +1,8 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" [ngClass]="{'hidden': !isNavbarVisible}">
   <div class="container-fluid">
-    <img src="assets/favicon-32x32.png" alt="Logo" width="38" height="38" class="logo">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-brand">
+      <img src="assets/favicon-32x32.png" alt="Logo" width="38" height="38" class="logo">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown" (mouseenter)="isDropdownOpen = true" (mouseleave)="isDropdownOpen = false">
           <a class="nav-link" href="#">
@@ -15,7 +16,9 @@
           </div>
         </li>
       </ul>
-     
     </div>
+    </div>
+
   </div>
 </nav>
+
