@@ -5,6 +5,7 @@ import { EventsComponent } from './events/events.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AboutComponent } from './about/about.component';
 import { GloamsessionComponent } from './gloamsession/gloamsession.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -19,7 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [MatCardModule,RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

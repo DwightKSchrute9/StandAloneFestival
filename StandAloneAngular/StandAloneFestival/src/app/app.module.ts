@@ -14,6 +14,11 @@ import { HomeComponent } from './home/home.component';
 import { GloamsessionComponent } from './gloamsession/gloamsession.component';
 
 import { AudioSceneComponent } from './audio-scene/audio-scene.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+
+
+
 
 @NgModule({
   declarations: [
@@ -29,16 +34,21 @@ import { AudioSceneComponent } from './audio-scene/audio-scene.component';
 
 
 
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
-
+    NgbModule,
+    BrowserAnimationsModule,
+    MatCardModule
 
 
   ],
   providers: [],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
