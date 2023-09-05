@@ -4,36 +4,6 @@
   position: relative;
   padding: 40px;
   background-color: rgb(55, 3, 55);
-  @media screen and (min-width: 769px) {
-    .cards-wrapper {
-      overflow-x: hidden;
-    }
-  }
-
-
-  .scroll-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .left {
-    left: 0;
-  }
-
-  .right {
-    right: 0;
-  }
-
-  .scroll-button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
 
   .cards-wrapper {
     display: flex;
@@ -70,6 +40,12 @@
         width: 90%;
         height: auto;
       }
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .cards-wrapper {
+      overflow-x: hidden;
     }
   }
 }
