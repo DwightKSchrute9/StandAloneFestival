@@ -42,7 +42,7 @@
   }
 
   .video-item {
-    padding: 1rem;
+    padding: 5rem;
     border-bottom: 1px solid #e9ecef;
     display: flex;
     flex-direction: column;
@@ -77,6 +77,8 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
+
+
     .imgAvatar {
       border-radius: 20px;
       width: 140px;
@@ -87,13 +89,13 @@
 
     @media (max-width: 767px) {
       .video-item {
-        max-width: 50%; // Imposta la larghezza al 50% in modalità smartphone
+        max-width: 50%;
         padding: 0;
 
         iframe {
-          max-width: 100%; // Modifica la larghezza massima dell'iframe
-          width: 100%; // Imposta la larghezza dell'iframe al 100% del suo contenitore
-          height: auto; // Mantiene l'aspect ratio
+          max-width: 100%;
+          width: 100%;
+          height: auto;
         }
       }
     }
@@ -108,5 +110,18 @@
   .accordion-button{
     border-radius: 10px;
     font-size: 1rem;
+    width: 150px;
+    height: auto;
   }
+  /* CSS per l'icona della freccia */
+.arrow-up::after {
+  content: "↑";
+  margin-left: 5px;
+}
+
+.arrow-down::after {
+  content: "↓";
+  margin-left: 5px;
+}
+
 }

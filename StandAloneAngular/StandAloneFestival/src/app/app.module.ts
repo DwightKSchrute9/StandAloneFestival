@@ -16,6 +16,7 @@ import { GloamsessionComponent } from './gloamsession/gloamsession.component';
 import { AudioSceneComponent } from './audio-scene/audio-scene.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -43,7 +44,8 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    FontAwesomeModule
 
 
   ],

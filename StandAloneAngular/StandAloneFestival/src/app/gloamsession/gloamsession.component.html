@@ -15,79 +15,84 @@
         <p>Sac Recording.</p>
 
 
+        <!-- Accordion -->
+
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" (click)="toggleAccordion(1)" [attr.aria-expanded]="isSection1Open" data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapseOne-' + 1">
+        Narova
+        <span [class]="isSection1Open ? 'arrow-up' : 'arrow-down'"></span>
+      </button>
+    </h2>
+    <div [id]="'panelsStayOpen-collapseOne-' + 1" class="accordion-collapse collapse" [class.show]="isSection1Open">
+      <div class="accordion-body">
+        <!-- Contenuto della sezione #1 -->
+        Nicola Proscia
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" (click)="toggleAccordion(2)" [attr.aria-expanded]="isSection2Open" data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapseOne-' + 2">
+        Leland
+        <span [class]="isSection2Open ? 'arrow-up' : 'arrow-down'"></span>
+      </button>
+    </h2>
+    <div [id]="'panelsStayOpen-collapseOne-' + 2" class="accordion-collapse collapse" [class.show]="isSection2Open">
+      <div class="accordion-body">
+        <!-- Contenuto della sezione #2 -->
+        Nicola Proscia
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" (click)="toggleAccordion(3)" [attr.aria-expanded]="isSection3Open" data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapseOne-' + 3">
+        Rastroni
+        <span [class]="isSection3Open ? 'arrow-up' : 'arrow-down'"></span>
+      </button>
+    </h2>
+    <div [id]="'panelsStayOpen-collapseOne-' + 3" class="accordion-collapse collapse" [class.show]="isSection3Open">
+      <div class="accordion-body">
+        <!-- Contenuto della sezione #3 -->
+        Nicola Proscia
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" (click)="toggleAccordion(4)" [attr.aria-expanded]="isSection4Open" data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapseOne-' + 4">
+        Simona Armenise
+        <span [class]="isSection4Open ? 'arrow-up' : 'arrow-down'"></span>
+      </button>
+    </h2>
+    <div [id]="'panelsStayOpen-collapseOne-' + 4" class="accordion-collapse collapse" [class.show]="isSection4Open">
+      <div class="accordion-body">
+        <!-- Contenuto della sezione #4 -->
+        Nicola Proscia
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" (click)="toggleAccordion(5)" [attr.aria-expanded]="isSection5Open" data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapseOne-' + 5">
+        Checco Curci
+        <span [class]="isSection5Open ? 'arrow-up' : 'arrow-down'"></span>
+      </button>
+    </h2>
+    <div [id]="'panelsStayOpen-collapseOne-' + 5" class="accordion-collapse collapse" [class.show]="isSection5Open">
+      <div class="accordion-body">
+        <!-- Contenuto della sezione #5 -->
+        Nicola Proscia
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
-        <!--Accordion-->
 
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" (click)="toggleAccordion(1)" [attr.aria-expanded]="isSection1Open" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
-                Narova #1
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" [class.show]="isSection1Open">
-              <div class="accordion-body">
-                <!-- Contenuto della sezione #1 -->
-                Nicola Proscia
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" (click)="toggleAccordion(2)" [attr.aria-expanded]="isSection2Open" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
-                Leland #1
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" [class.show]="isSection2Open">
-              <div class="accordion-body">
-                <!-- Contenuto della sezione #2 -->
-                Nicola Proscia
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" (click)="toggleAccordion(3)" [attr.aria-expanded]="isSection3Open" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
-                Rastroni #1
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" [class.show]="isSection3Open">
-              <div class="accordion-body">
-                <!-- Contenuto della sezione #3 -->
-                Nicola Proscia
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" (click)="toggleAccordion(4)" [attr.aria-expanded]="isSection4Open" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
-                Simona Armenise #1
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" [class.show]="isSection4Open">
-              <div class="accordion-body">
-                <!-- Contenuto della sezione #4 -->
-                Nicola Proscia
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" (click)="toggleAccordion(5)" [attr.aria-expanded]="isSection5Open" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
-                Checco Curci #1
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" [class.show]="isSection5Open">
-              <div class="accordion-body">
-                <!-- Contenuto della sezione #5 -->
-                Nicola Proscia
-              </div>
-            </div>
-          </div>
-
-        </div>
 
 
 
