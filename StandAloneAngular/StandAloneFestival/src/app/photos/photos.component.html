@@ -1,10 +1,47 @@
-<div class="card-container" #cardContainer>
-  <div class="cards-wrapper">
-    <mat-card class="example-card" *ngFor="let image of images">
-      <img [src]="'assets/' + image.filename" [alt]="image.alt">
-    </mat-card>
+
+<div class="box">
+<div class="container mt-5">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="./assets/foto7.jpg" class="d-block mx-auto img-fluid p-3  custom-image" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/foto4.jpg" class="d-block mx-auto img-fluid p-3  custom-image" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/foto5.jpg" class="d-block mx-auto img-fluid p-3  custom-image" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/foto6.jpg" class="d-block mx-auto img-fluid p-3  custom-image" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/foto3.jpg" class="d-block mx-auto img-fluid p-3  custom-image" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/foto8.jpg" class="d-block mx-auto img-fluid p-3  custom-image" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/foto9.jpg" class="d-block mx-auto img-fluid p-3  custom-image" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/foto10.jpg" class="d-block mx-auto img-fluid p-3  custom-image" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/foto2.jpg" class="d-block mx-auto img-fluid p-3  custom-image" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </div>
 
-
-
+</div>

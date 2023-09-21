@@ -68,14 +68,14 @@
   }
 
   .playlist-info {
-    height: 80vh;
+    height: 40vh;
     padding: 20px;
     margin: 30px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     border-right: 1px solid #e9ecef;
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
 
 
@@ -105,18 +105,26 @@
     }
   }
   .accordion{
-    padding: 38px;
+    padding: 35px;
+    background-color: #d1a2a2;
+    border-radius: 10px;
+
   }
   .accordion-button{
-    border-radius: 10px;
+
     font-size: 1rem;
-    width: 150px;
+    width: 250px;
     height: auto;
+    font-weight: 900;
+    font-style: initial;
+    background-color: #17091f;
+    color: #ced7df;
   }
   /* CSS per l'icona della freccia */
 .arrow-up::after {
   content: "↑";
   margin-left: 5px;
+
 }
 
 .arrow-down::after {

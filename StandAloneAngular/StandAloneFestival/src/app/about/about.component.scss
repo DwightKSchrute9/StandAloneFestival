@@ -1,8 +1,10 @@
 .about-section {
-  background-color: grey; 
+
   text-align: center;
   padding: 20px;
-  color: white;
+
+  background-color: rgba(18, 4, 4, 0.5); /* Colore di sfondo con trasparenza al 50% */
+
 
   .logo {
     position: absolute;
@@ -21,8 +23,9 @@
     padding: 1rem;
     margin: 2rem;
     border-radius: 10px;
-    backdrop-filter: blur(8px); /* Effetto blur del colore di sfondo */
+    backdrop-filter: opacity(50%); /* Effetto blur del colore di sfondo */
     color: rgb(238, 208, 208);
+
 
 
     blockquote {

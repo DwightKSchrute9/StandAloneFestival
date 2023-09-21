@@ -1,19 +1,26 @@
 
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img src="assets/favicon-32x32.png" alt="Logo" width="38" height="38" class="logo">
 
-<nav class="navbar bg-body-tertiary" [ngClass]="{'hidden': !isNavbarVisible}">
-  <div class="container-fluid">
-    <div class="navbar-brand">
-      <img src="assets/favicon-32x32.png" alt="Logo" width="38" height="38" class="logo">
-      <a class="nav-link" href="#" (click)="toggleDropdown()">
-        Stand Alone Complex
-      </a>
-      <div class="dropdown-menu" [class.show]="isDropdownOpen" (mouseenter)="isDropdownOpen = true" (mouseleave)="isDropdownOpen = false">
-        <a class="dropdown-item" routerLink="/photos">Stand Alone Festival</a>
-        <a class="dropdown-item" routerLink="/gloam-session">Gloam Session</a>
-        <a class="dropdown-item" routerLink="/audiolibri">Audiolibri</a>
-        <a class="dropdown-item" routerLink="/eventi">Eventi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Stand Alone Complex
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#photos">Stand Alone Festival</a></li>
+                <li><a class="dropdown-item" href="#gloamsession">Gloam Session</a></li>
+                <li><a class="dropdown-item" href="#">Audiolibri</a></li>
+                <li><a class="dropdown-item" href="#">Eventi</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>

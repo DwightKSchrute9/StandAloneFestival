@@ -13,14 +13,16 @@ export class NavbarComponent {
   toggleDropdown() {
     if (window.innerWidth <= 767) {
       // Se la larghezza della finestra è inferiore o uguale a 767px (modalità mobile)
-      this.isDropdownOpen = !this.isDropdownOpen;
+      // this.isDropdownOpen = !this.isDropdownOpen;
     }
   }
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const st = window.pageYOffset || document.documentElement.scrollTop;
-    this.isNavbarVisible = st < this.lastScrollTop;
-    this.lastScrollTop = st;
-  }
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+  //   const st = window.pageYOffset || document.documentElement.scrollTop;
+  //   this.isNavbarVisible = st < this.lastScrollTop;
+  //   this.lastScrollTop = st;
+  // }
+
+
 }
